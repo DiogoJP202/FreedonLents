@@ -7,3 +7,71 @@
         max-width: none;
     }
 }
+
+@media screen and (min-width: 800px){
+    main #principal {
+        display: flex;
+        align-items: stretch;
+    }
+    main #principal article p {
+        font-size: 4vw;
+    }
+    
+    main #principal .sessaoPrincipal::after{
+        left: -30%;
+        top: -75%;
+    }
+    
+    #secundaria{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #caracteristicas{
+        width: 50%;
+    }
+    
+    .caracteristica{
+        max-height: 230px;
+    }
+
+    #caracteristicas .caracteristica:nth-last-child(even)::after {
+        top: -95%;
+    }
+
+    figure{
+        width: 50%;
+    }
+
+    .estilos{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #grupoDePessoas1{
+        width: 45%;
+        height: auto !important;
+    }
+
+    #grupoDePessoas1 h2{
+        display: flex;
+        position: relative;
+        top: 30%;
+        height: 40%;
+        width: 90%;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    #grupoDePessoas1 h2 span{
+        font-size: 3vw;
+        height: 100px;
+    }
+
+    #grupoDePessoas1 h2 span:last-of-type{
+        align-self: flex-end;
+    }
+}

@@ -110,8 +110,11 @@ main #principal article{
 main #principal article p{
     padding: 10px;
     color: var(--color3);
-    font: 1rem;
     font-size: 10vw;
+}
+
+#secundaria{
+    background-color: #fff;
 }
 
 #caracteristicas{
@@ -125,6 +128,7 @@ main #principal article p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 30%;
 }
 
@@ -196,33 +200,29 @@ figure img{
 
 .estilos .bola{
     position: relative;
-    width: 150px;
-    height: 150px;
+    max-width: 180px;
+    max-height: 180px;
+    width: 45vw;
+    height: 45vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #000;
 }
 
 .estilos .bola:nth-child(even){
-    left: -35px;
-    width: 180px;
-    height: 180px;
-    z-index: 1;
+    background-image: url(../imgs/person4.png);
+    background-color: var(--color2);
+    position: relative;
+    left: -5%;
 }
 
 .estilos .bola:nth-child(odd){
-    bottom: -60px;
-    margin-left: 5px;
-    z-index: 1;
-}
-
-.estilos .bola img{
-    width: 100%;
-    height: 100%;
+    background-image: url(../imgs/person3.png);
     background-color: var(--color4);
-    box-shadow: 1px 1px 4px;
-    border-radius: 50%;
-}
-
-.estilos .bola:nth-child(even) img{
-    background-color: var(--color2);
+    position: relative;
+    bottom: -50px;
 }
 
 h2{
@@ -252,7 +252,7 @@ h2 #textoBranco{
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 #grupoDePessoas2 .retangular{
