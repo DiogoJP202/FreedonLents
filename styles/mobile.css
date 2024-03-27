@@ -1,1 +1,385 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Kadwa:wght@400;700&display=swap');
+
+:root{
+        --color1: #B5C2EC;
+        --color2: #8398D6;
+        --color3: #5C74BD;
+        --color4: #3E58A6;    
+        --color5: #213F99;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    background-color: var(--color5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header > .logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header > .logo img{
+    width: 90px;
+}
+
+header > .logo p{
+    color: var(--color2);
+    font-family: "Jomolhari", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+header > .logo span{
+    text-align: right;
+    display: block;
+    color: #fff;
+}
+
+header button{
+    max-width: 200px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-family: "Kadwa", serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 30px;
+    background: var(--color1);
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 1px 1px 4px #000;
+}
+
+main #principal{
+    width: 100%;
+}
+
+main #principal .sessaoPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color1);
+    position: relative;
+    z-index: -2;
+}
+
+main #principal .sessaoPrincipal img, main #principal .sessaoPrincipal h1{
+    width: 50%;
+}
+
+main #principal .sessaoPrincipal h1{
+    padding: 10px;
+    color: var(--color4);
+    font-size: 5vw;
+}
+
+main #principal .sessaoPrincipal::after{
+    content: " ";
+    z-index: -1;
+    position: absolute;
+    left: 15%;
+    top: -170%;
+    clip-path: polygon(50% 0, 100% 50%, 50% 50%, 0 50%);
+    background-color: var(--color3);
+    width: 100vw;
+    height: 100vw;
+    transform: rotate(135deg);
+}
+
+main #principal article{
+    padding: 10px;
+    background-color: #fff;
+}
+
+main #principal article p{
+    padding: 10px;
+    color: var(--color3);
+    font: 1rem;
+    font-size: 10vw;
+}
+
+#caracteristicas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#caracteristicas .caracteristica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+#caracteristicas .caracteristica::before{
+    content: " ";
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 30px;
+    background-color: var(--color1);
+    border-radius: 50%;
+}
+
+#caracteristicas .caracteristica .imagemDaCaracteristica{
+    width: 100%;
+    max-width: 100px;
+    padding: 7px;
+    text-align: center;
+    background-color: var(--color1);
+    border-radius: 50%;
+}
+
+#caracteristicas .caracteristica:nth-last-child(even) .imagemDaCaracteristica{
+    background: var(--color3);
+}
+
+#caracteristicas .caracteristica:nth-last-child(even)::after{
+    content: "";
+    position: relative;
+    top: -93%;
+    border-top: 5px dashed var(--color2);
+    width: 220%;
+}
+
+#caracteristicas .caracteristica img{
+    width: 100%;
+    margin: auto;
+}
+
+#caracteristicas .caracteristica p{
+    text-align: center;
+    font-family: "Kadwa", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+figure{
+    margin: 5px 10px;
+    padding: 15px;
+    background-color: var(--color3);
+    border-radius: 10px;
+}
+
+figure img{
+    width: 100%;
+}
+
+.estilos{
+    background-color: var(--color2);
+}
+
+.estilos #grupoDePessoas1{
+    height: 250px;
+}
+
+.estilos #pessoas{
+    display: flex;
+}
+
+.estilos .bola{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.estilos .bola:nth-child(even){
+    left: -35px;
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+}
+
+.estilos .bola:nth-child(odd){
+    bottom: -60px;
+    margin-left: 5px;
+    z-index: 1;
+}
+
+.estilos .bola img{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color4);
+    box-shadow: 1px 1px 4px;
+    border-radius: 50%;
+}
+
+.estilos .bola:nth-child(even) img{
+    background-color: var(--color2);
+}
+
+h2{
+    width: 200px;
+    float: inline-end;
+    margin-right: 10px;
+}
+
+h2 span{
+    display: block;
+    font-size: 1.5rem;
+    font-family: "Kadwa", serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 30px;
+}
+
+h2 #textoPreto{
+    text-align: right;
+}
+
+h2 #textoBranco{
+    color: #fff;
+}
+
+#grupoDePessoas2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+#grupoDePessoas2 .retangular{
+    display: flex;
+    width: 40%;
+    background-color: var(--color3);
+}
+
+#grupoDePessoas2 .retangular img{
+    width: 100%;
+}
+
+#avaliacoes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #000;
+}
+
+#avaliacoes h2{
+    display: block;
+    width: 100%;
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+#avaliacoes .avaliacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    width: 100%;
+    min-height: 300px;
+    margin: 10px;
+    background-color: var(--color2);
+}
+
+#avaliacoes .avaliacao .bola{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#avaliacoes .avaliacao .bola .fundoPreto{
+    display: block;
+    content:" ";
+    z-index: -1;
+    position: absolute;
+    width: 100px;
+    background: #000;
+}
+
+#avaliacoes .avaliacao img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color3);
+}
+
+#avaliacoes .conteudo{
+    width: 60%;
+    padding: 10px;
+}
+
+#avaliacoes .conteudo .estrelas{
+    display: flex;
+    justify-content: space-between;
+}
+
+#avaliacoes .conteudo .checked {
+    color: #ff0;
+}
+
+#avaliacoes .conteudo p{
+    padding: 10px;
+    color: #fff;
+    font-size: 1.05em;
+}
+
+#avaliacoes .conteudo .textoDaAvaliacao{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+#avaliacoes .conteudo .autor{
+    text-align: right;
+    font-weight: bold;
+    font-style: italic;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 1.1em;
+    background-color: var(--color5);
+}
+
+footer a{
+    margin: 10px;
+    text-decoration: none;
+    color: #5C74BD;
+}
+
+footer a:hover{
+    color: #ff0;
+    text-decoration: underline;
+}
+
+footer #Agradecimento{
+    padding: 15px;
+}
+
+footer #modelos{
+    padding: 15px;
+}
+
+footer #modelos ul{
+    list-style: none;
+    margin: 10px 0;
+}

@@ -6,68 +6,113 @@
     <title>Freedon Lents</title>
     <link rel="stylesheet" href="styles/mobile.css" media="all">
     <link rel="stylesheet" href="styles/mediaQueries.css">
+    <link rel="shortcut icon" href="imgs/LogoAzul.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <img src="imgs/Logo.png" alt="Logo do site, Óculos emitindo sinais de WI-FI.">
+        <div class="logo">
+            <img src="imgs/Logo.png" alt="Logo do site, Óculos emitindo sinais de WI-FI.">
+            <p>Freedon <span class="branca">Lents</span></p>
+        </div>
         <button>Faça seu orçamento!</button>
     </header>
     <main>
-        <section class="princial">
-            <h1>Tenha uma nova visão do seu cotidiano.</h1>
-            <img src="imgs/oculos.gif" alt="Óculos 3D girando.">
+        <section id="principal">
+            <div class="sessaoPrincipal">
+                <h1>Tenha uma nova visão do seu cotidiano.</h1>
+                <img src="imgs/oculos.gif" alt="Óculos 3D girando.">
+            </div>
             <article>
                 <p>Veja o mundo com as lentes mais tecnologicas do mercado, seja claro ou escuro, você escolhe a ótica do seu mundo.</p>
             </article>
         </section>
-        <section class="caracteristicas">
-            <div class="caracteristica">
-                <p>Controle<br>via celular</p>
-                <div class="imagemDaCaracteristica"><img src="imgs/Celular.png" alt="Desenho de uma mão segurando um celular."></div>
-            </div>
-            <div class="caracteristica">
-                <p>Tecnologia<br>Sustentável</p>
-                <div class="imagemDaCaracteristica"><img src="imgs/SUTENTABILIDADE.png" alt="Desenho de uma lâmpada brilhando com uma planta dentro, representando sustentabilidade."></div>
-            </div>
-            <div class="caracteristica">
-                <p>Design<br>Personalizável</p>
-                <div class="imagemDaCaracteristica"><img src="imgs/medida.png" alt="Desenho de uma régua com medidas."></div>
-            </div>
+        <section id="secundaria">
+            <section id="caracteristicas">
+                <div class="caracteristica">
+                    <p>Controle<br>via celular</p>
+                    <div class="imagemDaCaracteristica"><img src="imgs/Celular.png" alt="Desenho de uma mão segurando um celular."></div>
+                </div>
+                <div class="caracteristica">
+                    <p>Tecnologia<br>Sustentável</p>
+                    <div class="imagemDaCaracteristica"><img src="imgs/SUTENTABILIDADE.png" alt="Desenho de uma lâmpada brilhando com uma planta dentro, representando sustentabilidade."></div>
+                </div>
+                <div class="caracteristica">
+                    <p>Design<br>Personalizável</p>
+                    <div class="imagemDaCaracteristica"><img src="imgs/medida.png" alt="Desenho de uma régua com medidas."></div>
+                </div>
+            </section>
             <figure>
                 <img src="imgs/oculos-escuros.gif" alt="Gif de óculos aumentando e diminuindo a claridade das lentes.">
             </figure>
         </section>
         <section class="estilos">
-            <details>
-                <div id="grupoDePessoas1">
+            <div id="grupoDePessoas1">
+                <div id="pessoas">
                     <div class="bola"><img src="imgs/person3.png" alt="Homem asiático de óculos."></div>
                     <div class="bola"><img src="imgs/person4.png" alt="Homem negro de óculos."></div>
                 </div>
-                <h2>ESTILOS <span id="textoBranco">ÚNICOS</span></h2>
-            </details>
+                <h2>
+                    <span id="textoPreto">ESTILOS</span>
+                    <span id="textoBranco">ÚNICOS</span>
+                </h2>
+            </div>
             <div id="grupoDePessoas2">
-                <div class="retangular"><img src="imgs/person1.png" alt="Mulher negra de óculos."></div>
-                <div class="retangular"><img src="imgs/person2.png" alt="Mulher branca de óculos."></div>
+                <div class="retangular"><img src="imgs/person2.png" alt="Mulher negra de óculos."></div>
+                <div class="retangular"><img src="imgs/person1.png" alt="Mulher branca de óculos."></div>
             </div>
         </section>
-        <section class="avaliacoes">
+        <section id="avaliacoes">
             <h2>AVALIAÇÕES DE CLIENTES</h2>
             <div class="avaliacao">
-                <div class="bola"><img src="imgs/DiogoDeOculos.gif" alt="Homem branco de óculos."></div>
-                <div class="estrelas"></div>
-                <p class="textoDaAvaliacao">Incrível, agora meu mundo pode ir de escuro, cinza e triste para claro e ilumindado com um clique! Obrigado, Freedon Lents!</p>
-                <p class="autor">Diogo A.</p>
+                <div class="bola">
+                    <img src="imgs/DiogoDeOculos.gif" alt="Homem branco de óculos.">
+                    <div class="fundoPreto"></div>
+                </div>
+                <div class="conteudo">
+                    <div class="estrelas">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p class="textoDaAvaliacao">Incrível, agora meu mundo pode ir de escuro, cinza e triste para claro e ilumindado com um clique! Obrigado, Freedon Lents!</p>
+                    <p class="autor">Diogo A.</p>
+                </div>
+            </div>
+            <div class="avaliacao">
+                <div class="bola">
+                    <img src="imgs/FelipeF.png" alt="Homem branco de óculos.">
+                    <div class="fundoPreto"></div>
+                </div>
+                <div class="conteudo">
+                    <div class="estrelas">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p class="textoDaAvaliacao">
+                        Minha experiência com a Freedom Lens está sendo muito boa! Agora não preciso mais me preocupar em quando vou sair de casa e o sol está forte, a adaptação da lente funciona de forma perfeita. Só tenho um feedback, após cair de skate, o óculos me machucou em minha sobrancelha, acho que seria muito viável ser criado uma "Freedom Contact Lenses" .
+                        </p>
+                    <p class="autor">Felipe F.</p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <a href="https://github.com/diogojp202">&copy; Diogo Antonny</a>
         <p id="Agradecimento">Agradecimento a felipe feliciano pela a ajuda com os gifs e a foto.</p>
-        <strong>MODELOS: (kkkk)</strong>
-        <ul>
-            <li> Diogo Antonny.
-            <li> Felipe Feliciano.
-        </ul>
+        <div id="modelos">
+            <strong>MODELOS: (kkkk)</strong>
+            <ul>
+                <li> Diogo Antonny.
+                <li> Felipe Feliciano.
+            </ul>
+        </div>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
